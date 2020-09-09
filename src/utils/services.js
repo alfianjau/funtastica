@@ -1,18 +1,42 @@
-import axios from 'axios'
+import request from './api'
 
-const BASE_URL = 'https://api.nytimes.com/svc/search/v2/articlesearch.json'
-
-// create async function for axios instance
-export async function fetchHits(query, dispatch, cancelToken) {
-  dispatch({ type: 'FETCH_START' })
-  try {
-    const result = await axios(
-      `${BASE_URL}?facet=true&facet_fields=type_of_material&facet_filter=true&fq=News&q=${query}&sort=relevance&api-key=${process.env.REACT_APP_NY_API_KEY}`,
-      { cancelToken }
-    )
-    dispatch({ type: 'FETCH_SUCCESS', payload: result.data.response.docs })
-  } catch (err) {
-    console.error(err)
-    axios.isCancel(err) || dispatch({ type: 'FETCH_FAILURE' })
-  }
+// get films api
+export function getFilms(query) {
+  return request({
+    url: `/films`,
+    method: 'get',
+    params: query,
+  })
+}
+// get people api
+export function getPeoples(query) {
+  return request({
+    url: `/people`,
+    method: 'get',
+    params: query,
+  })
+}
+// get species api
+export function getSpecieses(query) {
+  return request({
+    url: `/species`,
+    method: 'get',
+    params: query,
+  })
+}
+// get location api
+export function getLocations(query) {
+  return request({
+    url: `/locations`,
+    method: 'get',
+    params: query,
+  })
+}
+// get vehicles api
+export function getVehicles(query) {
+  return request({
+    url: `/vehicles`,
+    method: 'get',
+    params: query,
+  })
 }

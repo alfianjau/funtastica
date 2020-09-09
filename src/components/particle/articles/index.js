@@ -8,7 +8,7 @@ const Articles = ({ articles }) => {
       <ArticleList>
         {articles &&
           articles.map((article) => (
-            <ArticleStyled key={article._id}>
+            <ArticleStyled key={article.id}>
               <Article item={article} />
             </ArticleStyled>
           ))}

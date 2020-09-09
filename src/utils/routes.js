@@ -1,6 +1,7 @@
 import React from 'react'
-import { Route, Switch, Redirect } from 'react-router-dom'
+import { Route, Switch } from 'react-router-dom'
 import Home from '../pages/home'
+import Films from '../pages/films'
 import ArticleDetail from '../pages/detail'
 
 const AppRoutes = () => {
@@ -9,10 +10,24 @@ const AppRoutes = () => {
       <Route exact path="/">
         <Home />
       </Route>
+      <Route path="/films">
+        <Films />
+      </Route>
+      <Route path="/locations">
+        <ArticleDetail />
+      </Route>
+      <Route path="/people">
+        <ArticleDetail />
+      </Route>
+      <Route path="/species">
+        <ArticleDetail />
+      </Route>
+      <Route path="/vehicles">
+        <ArticleDetail />
+      </Route>
       <Route path="/article/:id">
         <ArticleDetail />
       </Route>
-      <Redirect to="/">back to Home</Redirect>
     </Switch>
   )
 }

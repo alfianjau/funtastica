@@ -31,7 +31,7 @@ function App() {
       >
         <Router>
           <Layout onSwitchTheme={toggleTheme} theme={theme}>
-            <h3 className="App-heading">New York Timers React app</h3>
+            <h3 className="App-heading">The Ghibli Almanac</h3>
             <AppRoutes />
           </Layout>
         </Router>

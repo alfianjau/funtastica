@@ -4,30 +4,23 @@ import { Link } from 'react-router-dom'
 import { HorizontalPadding, ThumbImage } from '../../../utils/constant'
 
 const Article = (props) => {
-  const { abstract, _id, multimedia, headline, source } = props.item
+  const { id, title, rt_score, release_date } = props.item
 
   return (
     <div className="rainbow-p-around_large">
-      <Card title={headline.main} footer={<span>{source}</span>}>
+      <Card
+        title={title}
+        footer={<span>Year release date: {release_date}</span>}
+      >
         <HorizontalPadding>
-          {multimedia.length ? (
-            <ThumbImage
-              src={`https://nytimes.com/${multimedia[1].url}`}
-              alt={headline.main}
-            />
-          ) : (
-            <ThumbImage
-              src="https://via.placeholder.com/400x600.png?text=Thou shalt find image"
-              alt={headline.main}
-            />
-          )}
-          <p className="App-lead_paragraph">{abstract}</p>
+          {/* <p className="App-lead_paragraph">{abstract}</p> */}
+          <span>score: {rt_score}</span>
           <Button
             label="Button Border"
             variant="neutral"
             className="rainbow-m-around_medium"
           >
-            <Link to={{ pathname: _id.substr(6), ...props }}>Details</Link>
+            <Link to={{ pathname: id, ...props }}>Details</Link>
           </Button>
         </HorizontalPadding>
       </Card>
