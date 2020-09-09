@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from '../pages/home'
 import Films from '../pages/films'
-import ArticleDetail from '../pages/detail'
+import FilmDetail from '../pages/detail'
 
 const AppRoutes = () => {
   return (
@@ -13,8 +13,8 @@ const AppRoutes = () => {
       <Route path="/films">
         <Films />
       </Route>
-      <Route path="/films/:id">
-        <ArticleDetail />
+      <Route path="/film/:id">
+        <FilmDetail />
       </Route>
       <Route path="/locations">
         <Films />

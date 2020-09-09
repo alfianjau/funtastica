@@ -22,6 +22,9 @@ export const HorizontalPadding = styled.div`
   padding: 0 1rem;
 `
 export const FullPadding = styled.div`
+  @media screen and (max-width: 991px) {
+    padding: 0;
+  }
   padding: 3rem;
   display: flex;
   flex-wrap: wrap;
@@ -29,6 +32,12 @@ export const FullPadding = styled.div`
 export const FourthContainer = styled.div`
   width: 25%;
   padding: 1rem;
+  @media screen and (max-width: 991px) {
+    width: 50%;
+  }
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
 `
 
 export const FullImage = styled.img`
