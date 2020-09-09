@@ -19,7 +19,7 @@ function Films() {
     }
   )
 
-  const [query, setQuery] = useState('')
+  const [query] = useState('')
 
   // watch input changes
   useEffect(() => {
