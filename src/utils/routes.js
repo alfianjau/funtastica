@@ -13,20 +13,20 @@ const AppRoutes = () => {
       <Route path="/films">
         <Films />
       </Route>
-      <Route path="/locations">
+      <Route path="/films/:id">
         <ArticleDetail />
+      </Route>
+      <Route path="/locations">
+        <Films />
       </Route>
       <Route path="/people">
-        <ArticleDetail />
+        <Films />
       </Route>
       <Route path="/species">
-        <ArticleDetail />
+        <Films />
       </Route>
       <Route path="/vehicles">
-        <ArticleDetail />
-      </Route>
-      <Route path="/article/:id">
-        <ArticleDetail />
+        <Films />
       </Route>
     </Switch>
   )

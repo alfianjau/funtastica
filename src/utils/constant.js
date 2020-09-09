@@ -21,6 +21,15 @@ export const MediaSizes = {
 export const HorizontalPadding = styled.div`
   padding: 0 1rem;
 `
+export const FullPadding = styled.div`
+  padding: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+`
+export const FourthContainer = styled.div`
+  width: 25%;
+  padding: 1rem;
+`
 
 export const FullImage = styled.img`
   padding-top: 1.5rem;

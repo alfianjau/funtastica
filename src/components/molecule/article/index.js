@@ -13,7 +13,6 @@ const Article = (props) => {
         footer={<span>Year release date: {release_date}</span>}
       >
         <HorizontalPadding>
-          {/* <p className="App-lead_paragraph">{abstract}</p> */}
           <span>score: {rt_score}</span>
           <Button
             label="Button Border"
