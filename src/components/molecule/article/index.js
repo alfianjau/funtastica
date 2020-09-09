@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card, Button } from 'react-rainbow-components'
 import { Link } from 'react-router-dom'
-import { HorizontalPadding, ThumbImage } from '../../../utils/constant'
+import { HorizontalPadding } from '../../../utils/constant'
 
 const Article = (props) => {
   const { id, title, rt_score, release_date } = props.item
