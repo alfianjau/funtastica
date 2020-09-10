@@ -27,7 +27,7 @@ export async function fetchLocations(query, dispatch, cancelToken) {
 export async function fetchSpecieses(query, dispatch, cancelToken) {
   dispatch({ type: 'FETCH_START' })
   try {
-    const result = await axios(`${BASE_URL}/films`, { cancelToken })
+    const result = await axios(`${BASE_URL}/species`, { cancelToken })
     dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
   } catch (err) {
     console.error(err)
@@ -37,7 +37,7 @@ export async function fetchSpecieses(query, dispatch, cancelToken) {
 export async function fetchPeoples(query, dispatch, cancelToken) {
   dispatch({ type: 'FETCH_START' })
   try {
-    const result = await axios(`${BASE_URL}/films`, { cancelToken })
+    const result = await axios(`${BASE_URL}/people`, { cancelToken })
     dispatch({ type: 'FETCH_SUCCESS', payload: result.data })
   } catch (err) {
     console.error(err)

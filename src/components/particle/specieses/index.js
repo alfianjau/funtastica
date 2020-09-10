@@ -1,15 +1,15 @@
 import React from 'react'
 import { ArticleList, ArticleStyled } from './styled'
-import Article from '../../molecule/film'
+import Species from '../../molecule/species'
 
-const Articles = ({ articles }) => {
+const Specieses = ({ articles }) => {
   return (
     <div className="article-listing">
       <ArticleList>
         {articles &&
           articles.map((article) => (
             <ArticleStyled key={article.id}>
-              <Article item={article} />
+              <Species item={article} />
             </ArticleStyled>
           ))}
       </ArticleList>
@@ -17,4 +17,4 @@ const Articles = ({ articles }) => {
   )
 }
 
-export default Articles
+export default Specieses

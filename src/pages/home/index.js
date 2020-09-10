@@ -129,7 +129,7 @@ function Home() {
               variant="neutral"
               className="rainbow-m-around_medium"
             >
-              <Link to="/species">Open</Link>
+              <Link to="/specieses">Open</Link>
             </Button>
           </HorizontalPadding>
         </Card>

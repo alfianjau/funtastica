@@ -7,7 +7,7 @@ import { Wrapper, LogoWrapper, Logo, TopActions, TopAction } from './styled'
 import logo from '../../../logo.svg'
 
 const homePageUrl = '/'
-const gitUrl = 'https://github.com/alfianjau/nyarticle'
+const gitUrl = 'https://github.com/alfianjau/funtastica'
 
 const Header = ({ onSwitchTheme, theme }) => {
   const switchIcon = theme === 'light' ? <MoonIcon /> : <SunIcon />

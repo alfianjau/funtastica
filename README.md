@@ -12,9 +12,15 @@
 - [Styled components](https://styled-components.com/)
 - [React router](https://reactrouter.com/)
 - [React Hooks](https://reactjs.org/docs/hooks-overview.html)
-- [Font Awesome](https://fontawesome.org)
+- [Font Awesome](https://fontawesome.com/)
 - [Jest](https://jestjs.io/)
 - [Enzyme](https://enzymejs.github.io/enzyme/)
+
+## Step to reproduce
+
+- clone this repository
+- `yarn install`
+- `yarn start`
 
 ## Available Scripts
 

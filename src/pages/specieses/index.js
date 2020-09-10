@@ -3,13 +3,13 @@ import { Spinner } from 'react-rainbow-components'
 // import { StoreContext } from '../../utils/store'
 import debounce from 'lodash.debounce'
 import axios from 'axios'
-import { fetchFilms } from '../../utils/async'
+import { fetchSpecieses } from '../../utils/async'
 import { fetchReducer } from '../../utils/reducer'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-rainbow-components'
-import Articles from '../../components/particle/articles/index'
+import Specieses from '../../components/particle/specieses'
 
-function Films() {
+function Races() {
   const [{ articles, hasError, isLoading }, dispatch] = useReducer(
     fetchReducer,
     {
@@ -24,13 +24,13 @@ function Films() {
   // watch input changes
   useEffect(() => {
     const { cancel, token } = axios.CancelToken.source()
-    const debouncedFetchFilms = debounce(
-      () => fetchFilms(query, dispatch, token),
+    const debouncedFetchSpecieses = debounce(
+      () => fetchSpecieses(query, dispatch, token),
       500
     )
-    debouncedFetchFilms()
+    debouncedFetchSpecieses()
     return () =>
-      cancel('No longer latest query') || debouncedFetchFilms.cancel()
+      cancel('No longer latest query') || debouncedFetchSpecieses.cancel()
   }, [query])
 
   return (
@@ -46,10 +46,10 @@ function Films() {
       {isLoading ? (
         <Spinner variant="brand" />
       ) : (
-        <Articles articles={articles} />
+        <Specieses articles={articles} />
       )}
     </div>
   )
 }
 
-export default Films
+export default Races
