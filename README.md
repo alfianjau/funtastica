@@ -8,14 +8,14 @@
 - [React Rainbow UI KIT](https://react-rainbow.io/)
 - [Axios](https://github.com/axios/axios)
 - [Lodash](https://lodash.com/)
-- [Ghibli API](https://ghibliapi.herokuapp.com/#tag/People)
+- [Ghibli API](https://ghibliapi.herokuapp.com/)
 - [Styled components](https://styled-components.com/)
 - [React router](https://reactrouter.com/)
 - [React Hooks](https://reactjs.org/docs/hooks-overview.html)
 - [Font Awesome](https://fontawesome.com/)
 - [Jest](https://jestjs.io/)
 - [Enzyme](https://enzymejs.github.io/enzyme/)
-- Ghibli Icons made by [Freepik]("https://www.flaticon.com/authors/freepik") from [Flaticon]("https://www.flaticon.com")
+- Ghibli Icons made by [Freepik](https://www.flaticon.com/authors/freepik) from [Flaticon](https://www.flaticon.com)
 
 ## Step to reproduce
 
