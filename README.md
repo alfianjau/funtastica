@@ -15,6 +15,7 @@
 - [Font Awesome](https://fontawesome.com/)
 - [Jest](https://jestjs.io/)
 - [Enzyme](https://enzymejs.github.io/enzyme/)
+- Ghibli Icons made by [Freepik]("https://www.flaticon.com/authors/freepik") from [Flaticon]("https://www.flaticon.com")
 
 ## Step to reproduce
 

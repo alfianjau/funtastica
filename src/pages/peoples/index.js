@@ -3,11 +3,11 @@ import { Spinner } from 'react-rainbow-components'
 // import { StoreContext } from '../../utils/store'
 import debounce from 'lodash.debounce'
 import axios from 'axios'
-import { fetchFilms } from '../../utils/async'
+import { fetchPeoples } from '../../utils/async'
 import { fetchReducer } from '../../utils/reducer'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-rainbow-components'
-import Articles from '../../components/particle/articles/index'
+import Peoples from '../../components/particle/peoples'
 
 function Films() {
   const [{ articles, hasError, isLoading }, dispatch] = useReducer(
@@ -24,13 +24,13 @@ function Films() {
   // watch input changes
   useEffect(() => {
     const { cancel, token } = axios.CancelToken.source()
-    const debouncedFetchFilms = debounce(
-      () => fetchFilms(query, dispatch, token),
+    const debouncedFetchPeoples = debounce(
+      () => fetchPeoples(query, dispatch, token),
       500
     )
-    debouncedFetchFilms()
+    debouncedFetchPeoples()
     return () =>
-      cancel('No longer latest query') || debouncedFetchFilms.cancel()
+      cancel('No longer latest query') || debouncedFetchPeoples.cancel()
   }, [query])
 
   return (
@@ -46,7 +46,7 @@ function Films() {
       {isLoading ? (
         <Spinner variant="brand" />
       ) : (
-        <Articles articles={articles} />
+        <Peoples articles={articles} />
       )}
     </div>
   )

@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArticleList, ArticleStyled } from './styled'
-import Article from '../../molecule/film'
+import People from '../../molecule/people'
 
 const Articles = ({ articles }) => {
   return (
@@ -9,7 +9,7 @@ const Articles = ({ articles }) => {
         {articles &&
           articles.map((article) => (
             <ArticleStyled key={article.id}>
-              <Article item={article} />
+              <People item={article} />
             </ArticleStyled>
           ))}
       </ArticleList>

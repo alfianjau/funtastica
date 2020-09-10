@@ -1,6 +1,6 @@
-// test automation for article(single) component
+// test automation for location(single) component
 
-test('Simple valid test for single article component', () => {
+test('Simple valid test for single location component', () => {
   const linkElement = true
   expect(linkElement).toBe(true)
 })

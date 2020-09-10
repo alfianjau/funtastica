@@ -1,13 +1,13 @@
 // test automation for articles component (multi component)
 import React from 'react'
 import { shallow } from 'enzyme'
-import Articles from '../index'
+import Peoples from '../index'
 
-describe('Articles', () => {
+describe('Peoples', () => {
   it('renders without crashing', () => {
-    shallow(<Articles />)
+    shallow(<Peoples />)
   })
-  test('Simple valid test for Articles', () => {
+  test('Simple valid test for Peoples', () => {
     const linkElement = true
     expect(linkElement).toBe(true)
   })

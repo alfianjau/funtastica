@@ -1,4 +1,4 @@
-// test automation for articles component (multi component)
+// test automation for locations component (multi component)
 import React from 'react'
 import { shallow } from 'enzyme'
 import Locations from '../index'
