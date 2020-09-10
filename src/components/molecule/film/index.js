@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faTasks, faFilm } from '@fortawesome/free-solid-svg-icons'
 import { HorizontalPadding, VerticalPadding } from '../../../utils/constant'
 
-const Article = (props) => {
+const Film = (props) => {
   const { id, title, rt_score, release_date } = props.item
 
   return (
@@ -50,4 +50,4 @@ const Article = (props) => {
   )
 }
 
-export default Article
+export default Film

@@ -2,7 +2,7 @@ import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import Home from '../pages/home'
 import Films from '../pages/films'
-import FilmDetail from '../pages/detail'
+import FilmDetail from '../pages/filmDetail'
 
 const AppRoutes = () => {
   return (
@@ -19,7 +19,7 @@ const AppRoutes = () => {
       <Route path="/locations">
         <Films />
       </Route>
-      <Route path="/people">
+      <Route path="/peoples">
         <Films />
       </Route>
       <Route path="/species">

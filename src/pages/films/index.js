@@ -7,7 +7,7 @@ import { fetchFilms } from '../../utils/async'
 import { fetchReducer } from '../../utils/reducer'
 import { Link } from 'react-router-dom'
 import { Button } from 'react-rainbow-components'
-import Articles from '../../components/particle/articles'
+import Articles from '../../components/particle/articles/index'
 
 function Films() {
   const [{ articles, hasError, isLoading }, dispatch] = useReducer(

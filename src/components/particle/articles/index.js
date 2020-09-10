@@ -1,6 +1,6 @@
 import React from 'react'
 import { ArticleList, ArticleStyled } from './styled'
-import Article from '../../molecule/article'
+import Article from '../../molecule/film'
 
 const Articles = ({ articles }) => {
   return (
