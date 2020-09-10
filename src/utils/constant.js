@@ -18,6 +18,22 @@ export const MediaSizes = {
   },
 }
 
+const variants = ['brand', 'success', 'warning', 'error']
+
+export const Icon = styled.span.attrs((props) => {
+  return props.theme.rainbow.palette
+})`
+  ${(props) =>
+    variants.includes(props.variant) &&
+    `
+            color: ${props.getContrastText(props[props.variant].main)};
+        `};
+  ${(props) =>
+    props.variant === 'outline-brand' &&
+    `
+            color: ${props.brand.main};
+        `};
+`
 export const ColoredLink = styled.div`
   color: ${(props) => props.theme.rainbow.brand};
 `

@@ -42,7 +42,7 @@ function Home() {
               variant="neutral"
               className="rainbow-m-around_medium"
             >
-              <Link to="/films">Open Catalogue</Link>
+              <Link to="/films">Open</Link>
             </Button>
           </HorizontalPadding>
         </Card>
@@ -71,7 +71,7 @@ function Home() {
               variant="neutral"
               className="rainbow-m-around_medium"
             >
-              <Link to="/peoples">Open Catalogue</Link>
+              <Link to="/peoples">Open</Link>
             </Button>
           </HorizontalPadding>
         </Card>
@@ -100,7 +100,7 @@ function Home() {
               variant="neutral"
               className="rainbow-m-around_medium"
             >
-              <Link to="/locations">Open Catalogue</Link>
+              <Link to="/locations">Open</Link>
             </Button>
           </HorizontalPadding>
         </Card>
@@ -129,7 +129,7 @@ function Home() {
               variant="neutral"
               className="rainbow-m-around_medium"
             >
-              <Link to="/species">Open Catalogue</Link>
+              <Link to="/species">Open</Link>
             </Button>
           </HorizontalPadding>
         </Card>
