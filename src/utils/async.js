@@ -1,5 +1,6 @@
 // import * as ghibli from './services'
 import axios from 'axios'
+
 const BASE_URL = 'https://ghibliapi.herokuapp.com'
 
 // create async function for axios instance

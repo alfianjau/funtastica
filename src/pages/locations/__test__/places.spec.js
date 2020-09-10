@@ -1,13 +1,13 @@
 // test automation for home page
 import React from 'react'
 import { shallow } from 'enzyme'
-import Films from '../index'
+import Locations from '../index'
 
 it('renders without crashing', () => {
-  shallow(<Films />)
+  shallow(<Locations />)
 })
 
-test('Simple valid test for Films page', () => {
+test('Simple valid test for Locations page', () => {
   const linkElement = true
   expect(linkElement).toBe(true)
 })
