@@ -5,7 +5,7 @@ const themes = {
     rainbow: {
       palette: {
         brand: '#003e39',
-        mainBackground: '#49cfc3',
+        mainBackground: '#97a3b4',
         success: '#208e75',
         secondary: '#001715',
       },

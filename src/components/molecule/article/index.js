@@ -3,7 +3,7 @@ import { Card, Button, Rating } from 'react-rainbow-components'
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBook, faTasks, faFilm } from '@fortawesome/free-solid-svg-icons'
-import { HorizontalPadding } from '../../../utils/constant'
+import { HorizontalPadding, VerticalPadding } from '../../../utils/constant'
 
 const Article = (props) => {
   const { id, title, rt_score, release_date } = props.item
@@ -29,11 +29,13 @@ const Article = (props) => {
         footer={<span>Year release date: {release_date}</span>}
       >
         <HorizontalPadding>
-          <FontAwesomeIcon
-            icon={faBook}
-            size="6x"
-            className="rainbow-color_neutral"
-          />
+          <VerticalPadding>
+            <FontAwesomeIcon
+              icon={faBook}
+              size="6x"
+              className="rainbow-color_neutral"
+            />
+          </VerticalPadding>
           <Rating value={rt_score / 20} readOnly />
           <Button
             label="Button Border"

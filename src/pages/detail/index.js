@@ -1,13 +1,13 @@
 import React from 'react'
-import { Link, useLocation, useHistory } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { Card, Button, Badge, Rating } from 'react-rainbow-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBookOpen, faJournalWhills } from '@fortawesome/free-solid-svg-icons'
 import { ContainerMedium } from '../globalStyled'
+import { ColumnFlex, VerticalPadding } from '../../utils/constant'
 
 const FilmDetail = (props) => {
   let location = useLocation()
-  let history = useHistory()
   const {
     title,
     description,
@@ -31,9 +31,8 @@ const FilmDetail = (props) => {
           label="Button Border"
           variant="neutral"
           className="rainbow-m-around_medium"
-          onClick={() => history.goBack()}
         >
-          Go back
+          <Link to="/films">Go to Film Lists</Link>
         </Button>
         <Card
           actions={
@@ -51,19 +50,23 @@ const FilmDetail = (props) => {
             </div>
           }
         >
-          <FontAwesomeIcon
-            icon={faBookOpen}
-            size="6x"
-            className="rainbow-color_neutral"
-          />
-          <Badge
-            className="rainbow-m-around_medium"
-            label={release_date}
-            variant="lightest"
-            title="Release Date"
-          />
-          <Rating value={rt_score / 20} readOnly />
-          <p className="App-abstract">{description}</p>
+          <ColumnFlex>
+            <VerticalPadding>
+              <FontAwesomeIcon
+                icon={faBookOpen}
+                size="6x"
+                className="rainbow-color_neutral"
+              />
+            </VerticalPadding>
+            <Badge
+              className="rainbow-m-around_medium"
+              label={release_date}
+              variant="lightest"
+              title="Release Date"
+            />
+            <Rating value={rt_score / 20} readOnly />
+            <p className="App-abstract">{description}</p>
+          </ColumnFlex>
         </Card>
       </ContainerMedium>
     </>

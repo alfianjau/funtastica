@@ -18,8 +18,14 @@ export const MediaSizes = {
   },
 }
 
+export const ColoredLink = styled.div`
+  color: ${(props) => props.theme.rainbow.brand};
+`
 export const HorizontalPadding = styled.div`
   padding: 0 1rem;
+`
+export const VerticalPadding = styled.div`
+  padding: 1rem 0;
 `
 export const FullPadding = styled.div`
   @media screen and (max-width: 991px) {
@@ -29,9 +35,14 @@ export const FullPadding = styled.div`
   display: flex;
   flex-wrap: wrap;
 `
+export const ColumnFlex = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`
 export const FourthContainer = styled.div`
   width: 25%;
-  padding: 1rem;
+  padding: 1.5rem;
   @media screen and (max-width: 991px) {
     width: 50%;
   }
